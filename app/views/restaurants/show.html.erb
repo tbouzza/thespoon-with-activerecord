@@ -1,0 +1,8 @@
+<h1><%= @restaurant.name %></h1>
+<p><%= @restaurant.address %></p>
+<p> 🦄 * <%= @restaurant.rating %></p>
+
+<%= link_to 'Delete',
+    restaurant_path(@restaurant),
+    method: 'delete',
+    data: { confirm: "Are you sure?" } %>
